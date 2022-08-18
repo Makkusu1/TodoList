@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 10px;
+}
+body{
+    background-color: rgb(249, 203, 160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: rgb(123, 154, 220);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul{
+    list-style: none;
+}
+.todo-container{
+    background-color: white;
+    font-size: 1.6rem;
+    width: 40rem;
+    height: 60rem;
+    }
+.todo-list{
+    height: 100%;
+    overflow-y: auto;
+}
+.todo{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+.todo-item{
+    flex: 1;
+    overflow-x: auto;
+    margin-right: 3rem;
+}
+.todo-item::-webkit-scrollbar,.todo-list::-webkit-scrollbar{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.todo-item::-webkit-scrollbar-thumb,.todo-list::-webkit-scrollbar-thumb {
+    background-color: rgb(123, 154, 220); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: .5rem solid white;
+}
+.todo button{
+    height: 2rem;
+    width: 2rem;
+}
+.complete-btn{
+    margin-right: 3rem;
+    background-color: white;
+    border: solid rgb(123, 154, 220).15rem;
+
+}
+.trash-btn{
+    background-color: white;
+    border: none;
+    color: rgb(123, 154, 220);
+    font-size: 1.8rem;
+}
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+.completed {
+    color: rgb(123, 154, 220,0.5);
+}
+.completed .complete-btn{
+    background-color: rgb(123, 154, 220);
+    color: white;
+}
+form{
+    width: 40rem;
+    background-color: white;
+    border: none;
+    border-top: solid .15rem rgb(123, 154, 220);
+    padding: 2rem 3rem;
+    display: flex;
+}
+form input{
+    flex: 1;
+    border: none;
+    outline: none;
+    color: rgb(123, 154, 220);
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+form input::placeholder{
+    color: rgb(123, 154, 220,0.5);
+}
+.todo-button{
+    background-color: white;
+    border : none;
+    color: rgb(123, 154, 220);
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.title{
+    height: 10%;
+    border-bottom: solid .15rem rgb(123, 154, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+@media (max-width : 400px) {
+    :root{
+        font-size: 7px;
+    }
+}
+@media (max-width : 300px) {
+    :root{
+        font-size: 5px;
+    }
+}
