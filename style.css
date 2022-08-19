@@ -20,14 +20,18 @@ body{
 ul{
     list-style: none;
 }
+.main-container{
+    width: 40rem;
+    height: 66rem ;
+}
 .todo-container{
     background-color: white;
     font-size: 1.6rem;
-    width: 40rem;
-    height: 60rem;
+    width: 100%;
+    height: calc(100% - 6rem);
     }
 .todo-list{
-    height: 100%;
+    height: 54rem;
     overflow-y: auto;
 }
 .todo{
@@ -77,12 +81,13 @@ ul{
     color: white;
 }
 form{
-    width: 40rem;
+    width: 100%;
     background-color: white;
     border: none;
     border-top: solid .15rem rgb(123, 154, 220);
-    padding: 2rem 3rem;
+    padding:0 3rem;
     display: flex;
+    height: 6rem;
 }
 form input{
     flex: 1;
@@ -107,7 +112,7 @@ form input::placeholder{
     cursor: pointer;
 }
 .title{
-    height: 10%;
+    height: 6rem;
     border-bottom: solid .15rem rgb(123, 154, 220);
     display: flex;
     justify-content: center;
@@ -126,3 +131,9 @@ form input::placeholder{
         font-size: 5px;
     }
 }
+@media (orientation: portrait) {
+    .main-container{
+        width: 100%;
+        height: 100%;
+    }
+  }
